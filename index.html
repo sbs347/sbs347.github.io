@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="seulbinim">
+  <meta name="keywords" content="Web Cafe,Web Standards,Web Accessibility,웹접근성,웹표준">
+  <meta name="description" content="웹표준을 준수하고 웹접근성을 고려한 파일럿(Pilot)테스트 사이트 제작 실습">
+  <meta name="robots" content="all">
+  <title>Web Cafe</title>
+  <link rel="shortcut icon" href="asset/">
+  <link rel="apple-touch-icon" href="asset/common/webcafe.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <!-- <script src="js/grid.js" defer></script> -->
+</head>
+
+<body>
+  <!-- 건너뛰기 링크 시작 -->
+  <a class="skip-navigation" href="#main">본문 바로가기</a>
+  <!-- //건너뛰기 링크 종료 -->
+  <!-- 컨테이너 시작 -->
+  <div class="container">
+    <div class="bg-header">
+      <!-- 헤더 시작 -->
+      <header class="header">
+        <!-- 로고 시작 -->
+        <h1 class="logo">
+          <a href="index.html">
+              Web Cafe
+              <!-- Web Cafe SVG 이미지 제작 -->
+            </a>
+        </h1>
+        <!-- //로고 종료 -->
+        <!-- 멤버 링크 목록 시작 -->
+        <ul class="member">
+          <li>
+            <a href="#">로그인</a>
+          </li>
+          <li>
+            <a href="signup.html">회원가입</a>
+          </li>
+          <li>
+            <a href="#">커뮤니티</a>
+          </li>
+        </ul>
+        <!-- //멤버 링크 목록 종료 -->
+        <!-- 메인 메뉴 시작 -->
+        <nav class="navigation">
+          <h2 class="readable-hidden">메인 메뉴</h2>
+          <button class="btn-menubar" aria-label="메인 메뉴 보기">
+            <span class="menubar menubar-top"></span>
+            <span class="menubar menubar-middle"></span>
+            <span class="menubar menubar-bottom"></span>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="about.html">HTML5 소개</a>
+            </li>
+            <li>
+              <a href="video.html">동영상 강좌</a>
+            </li>
+            <li>
+              <a href="gallery.html">이미지 자료실</a>
+            </li>
+            <li>
+              <a href="board.html">게시판</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //메인 메뉴 종료 -->
+      </header>
+      <!-- //헤더 종료 -->
+    </div>
+    <!-- 텍스트 애니메이션 시작 -->
+    <div class="text-effect">
+      <div class="text-effect-frame frame-1">WEB STANDARDS</div>
+      <div class="text-effect-frame frame-2">WEB ACCESSIBILITY</div>
+      <div class="text-effect-frame frame-3">HTML5 &amp; CSS3</div>
+      <div class="text-effect-frame frame-4">TRY IT!</div>
+      <div class="text-effect-frame frame-5">
+        <span>Multicampus</span>
+      </div>
+    </div>
+    <!-- 텍스트 애니메이션 종료 -->
+    <!-- 메인 콘텐츠 시작 -->
+    <main class="main" id="main">
+      <!-- 새소식 시작 -->
+      <article class="news">
+        <h2 class="news-heading main-heading">새소식</h2>
+        <time datetime="2019-01-31">2019.01.31</time>
+        <p>웹표준 기본서로 꾸준히 사랑받았던 "웹표준 핵심가이드북 XHTML+CSS"와 "웹표준 핵심가이드북2 HTML5+CSS3"가 새롭게 개정판으로 출시되었다. 개정판에는 기존에 다루었던 내용에 WAI-ARIA 관련 내용이 추가되었으며 파일럿 프로젝트는 CSS의 미디어쿼리를 사용하여 반응형으로 제작하였다. 새로운 개정판은 웹접근성과 웹표준에 관해 저자의 풍부한 노하우를 엿볼 수 있는 알찬 구성이 장점이다.</p>
+        <figure>
+          <img class="responsive" src="asset/images/new-book.png" alt="" srcset="">
+          <!-- 1x 및 2x 이미지 제작 -->
+          <figcaption>웹표준 핵심가이드북 개정판</figcaption>
+        </figure>
+      </article>
+      <!-- //새소식 종료 -->
+      <!-- 공지사항 시작 -->
+      <section class="notice">
+        <h2 class="notice-heading main-heading" id="notice-heading">공지사항</h2>
+        <ul class="notice-list">
+          <li class="fa fa-dot-circle">
+            <a href="#">HTML5와 CSS3 프로젝트 샘플 다운로드</a>
+            <time datetime="2019-01-31">2019.01.31</time>
+          </li>
+          <li class="fa fa-dot-circle">
+            <a href="#">W3C 사이트 리뉴얼 소식 및 공지사항</a>
+            <time datetime="2019-01-31">2019.01.31</time>
+          </li>
+          <li class="fa fa-dot-circle">
+            <a href="#">한국형 웹콘텐츠 접근성 지침(KWCAG)3.0 개정 안내</a>
+            <time datetime="2019-01-31">2019.01.31</time>
+          </li>
+          <li class="fa fa-dot-circle">
+            <a href="#">주말 및 야간 서비스 이용 시 서버 점검시간 안내</a>
+            <time datetime="2019-01-31">2019.01.31</time>
+          </li>
+          <li class="fa fa-dot-circle">
+            <a href="#">정보 접근성 포럼 주최 웹접근성을 고려한 웹표준 세미나 신청</a>
+            <time datetime="2019-01-31">2019.01.31</time>
+          </li>
+        </ul>
+        <a href="#" class="notice-more fa fa-plus-square" aria-labelledby="notice-heading">더보기</a>
+      </section>
+      <!-- //공지사항 종료 -->
+      <!-- 웹 관련 용어 소개 시작 -->
+      <section class="term">
+        <h2 class="term-heading main-heading">웹 관련 용어</h2>
+        <!-- 1x 및 2x 배경 이미지 제작 main-heading 공통-->
+        <dl class="term-list">
+          <div class="odd">
+            <dt>웹표준</dt>
+            <dd>
+              <img class="responsive" src="asset/images/web-standards.jpg" alt="" srcset="">
+              <!-- 1x 및 2x 이미지 제작 -->
+            </dd>
+            <dd>웹표준은 W3C의 기술 표준을 의미하며 해당 기술 표준에는 HTML, CSS, Javascript가 있다.</dd>
+          </div>
+          <div class="even">
+            <dt>웹접근성</dt>
+            <dd>
+              <img class="responsive" src="asset/images/web-accessibility.jpg" alt="" srcset="">
+              <!-- 1x 및 2x 이미지 제작 -->
+            </dd>
+            <dd>웹접근성이란 장애에 구애받지 않고 누구나 접근할 수 있도록 웹 서비스를 제공해야 한다는 의미이다.</dd>
+          </div>
+        </dl>
+      </section>
+      <!-- //웹 관련 용어 소개 종료 -->
+      <!-- 인기사이트 시작 -->
+      <section class="favorite">
+        <h2 class="favorite-heading main-heading">인기 사이트</h2>
+        <ol class="favorite-list">
+          <li>
+            <a href="#">레이아웃 - Learn CSS Layout</a>
+          </li>
+          <li>
+            <a href="#">웹기술 레퍼런스 - MDN Web Docs</a>
+          </li>
+          <li>
+            <a href="#">플렉스 박스 - Flexbox Froggy</a>
+          </li>
+          <li>
+            <a href="#">그리드 시스템 - CSS Grid Garden</a>
+          </li>
+          <li>
+            <a href="#">CSS 프레임워크 - Semantic UI</a>
+          </li>
+        </ol>
+      </section>
+      <!-- //인기사이트 종료 -->
+    </main>
+    <!-- //메인 콘텐츠 종료 -->
+    <div class="bg-footer">
+      <!-- 푸터 시작 -->
+      <footer class="footer">
+        <!-- 웹카페 주소 시작 -->
+        <address>
+            <span>서울특별시 강남구 테헤란로 212</span>
+            <span>전화: 02-3429/5114</span>
+            <span>E-MAIL:
+              <a href="mailto:multicampus5114@multicampus.com">multicampus5114@multicampus.com</a>
+            </span>
+          </address>
+        <!-- //웹카페 주소 종료 -->
+        <!-- 웹카페 저작권정보 시작 -->
+        <small class="copyright">Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.</small>
+        <!-- //웹카페 저작권정보 종료 -->
+      </footer>
+      <!-- //푸터 종료 -->
+    </div>
+  </div>
+  <!-- // 컨테이너 종료 -->
+</body>
+
+</html>
